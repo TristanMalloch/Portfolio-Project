@@ -1,0 +1,85 @@
+body {
+	max-width: 950px;
+	margin: auto;
+	font-size: 1.2em;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+main {
+	background-color: #fdfff687;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f5f5f5;
+}
+
+header h1, header ul {
+	margin: 0.5em;
+}
+
+header h1 {
+	margin-left: 0.3em;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+header li {
+	padding: 1em;
+	font-weight: bold;
+}
+
+#about {
+	display: block;
+}
+
+#about img {
+	width: 200px;
+	height: auto;
+	margin: 1em;
+	border-radius: 15px;
+}
+
+.aboutMeContainer {
+	display: flex;
+	width: 100%;
+	/*flex-direction: column;*/
+}
+
+.aboutMeTextContainer {
+	display: block;
+	margin: 1em;
+}
+
+#projects {
+	margin: 1.3em;
+}
+
+#projects li {
+	list-style-type: circle;
+}
+
+#skills h2 {
+	margin: 1em;
+}
+
+#skills img {
+	height: 80px;
+	margin-left: 1.3em;
+}
+
+footer {
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 830px) {
+	.aboutMeContainer {
+		flex-direction: column;
+	}
+}
