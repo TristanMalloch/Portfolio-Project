@@ -1,37 +1,79 @@
 body {
-	max-width: 950px;
+	max-width: 1000px;
+	min-width: 475px;
 	margin: auto;
-	font-size: 1.2em;
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Space Mono', monospace;
+	background-color: white;
 }
 
 main {
-	background-color: #fdfff687;
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
 }
 
 header {
 	display: flex;
+	color: ghostwhite;
+	font-size: 1.2em;
 	justify-content: space-between;
-	background-color: #f5f5f5;
+	background-color: black;
 }
 
-header h1, header ul {
+#bigNav h1, #bigNav ul {
 	margin: 0.5em;
 }
 
-header h1 {
+#bigNav h1 {
 	margin-left: 0.3em;
 }
 
-header ul {
+#bigNav ul {
 	display: flex;
 	list-style: none;
 	padding: 0;
 }
 
-header li {
+#bigNav li {
 	padding: 1em;
 	font-weight: bold;
+}
+
+#bigNav a {
+	font-family: 'Space Mono', monospace;
+	color: ghostwhite;
+	text-decoration: none;
+}
+
+#mobileNav {
+	display: flex;
+	flex-direction: column;
+}
+
+#mobileNav img {
+	height: 80px;
+	cursor: pointer;
+	float: right;
+}
+
+#mobileNavContainer {
+	height: 100%;
+}
+
+#mobileNav li {
+	list-style-type: none;
+	margin-right: 1em;
+	
+}
+
+#smallNav {
+	display: none;
+}
+
+#mobileNav a {
+	font-family: 'Space Mono', monospace;
+	color: ghostwhite;
+	text-decoration: none;
 }
 
 #about {
@@ -39,7 +81,7 @@ header li {
 }
 
 #about img {
-	width: 200px;
+	width: 250px;
 	height: auto;
 	margin: 1em;
 	border-radius: 15px;
@@ -48,20 +90,43 @@ header li {
 .aboutMeContainer {
 	display: flex;
 	width: 100%;
+	align-items: center;
 	/*flex-direction: column;*/
 }
 
 .aboutMeTextContainer {
 	display: block;
 	margin: 1em;
+	font-family: helvetica;
+	font-size: 1.2em;
+	margin-bottom: 0;
 }
 
 #projects {
 	margin: 1.3em;
+	margin-top: 0;
 }
 
 #projects li {
-	list-style-type: circle;
+	list-style-type: disc;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 0.7em;
+}
+
+#dogFightDetails {
+	display: none;
+	font-family: helvetica;
+	font-size: 1.1em;
+}
+
+#dogFightDetails img {
+	height: 450px;
+	border: solid 1px black;
+}
+
+#dogFightName {
+	cursor: pointer;
 }
 
 #skills h2 {
@@ -75,11 +140,23 @@ header li {
 
 footer {
 	text-align: center;
-	background-color: #f5f5f5;
+	background-color: black;
+	color: ghostwhite;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (min-width: 898px) {
+	#mobileNav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 897px) {
 	.aboutMeContainer {
 		flex-direction: column;
+		align-items: flex-start;
+	} #bigNav ul {
+		display: none;
+	} #mobileNav {
+		display: inline-block;
 	}
 }
