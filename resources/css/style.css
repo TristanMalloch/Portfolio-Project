@@ -13,13 +13,6 @@ main {
 }
 
 header {
-	display: flex;
-	color: ghostwhite;
-	font-size: 1.2em;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	height: 65px;
 }
 
 #bigNav h1, #bigNav ul {
@@ -48,28 +41,46 @@ header h1 {
 }
 
 #mobileNav {
+	background-color: black;
 	display: flex;
-	flex-direction: column;
+	justify-content: flex-end;
 }
 
-#mobileNav img {
+#topDiv {
+	display: flex;
+	color: ghostwhite;
+	font-size: 1.2em;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	height: 65px;
+}
+
+#topDiv img {
 	height: 60px;
 	cursor: pointer;
-	float: right;
+	display: none;
 }
 
 #mobileNavContainer {
 	height: 100%;
+	float: right;
 }
 
 #mobileNav li {
 	list-style-type: none;
 	margin-right: 1em;
+	padding: 0.5em;
 	
 }
 
 #smallNav {
 	display: none;
+}
+
+#smallNav ul {
+	margin: 0;
+	text-align: right;
 }
 
 #mobileNav a {
@@ -146,6 +157,14 @@ footer {
 	color: ghostwhite;
 }
 
+#contact {
+	margin: 1em;
+}
+
+#submitButton {
+	margin: 1em;
+}
+
 @media only screen and (min-width: 898px) {
 	#mobileNav {
 		display: none;
@@ -159,6 +178,8 @@ footer {
 	} #bigNav ul {
 		display: none;
 	} #mobileNav {
-		display: inline-block;
+		display: block;
+	} #topDiv img {
+		display: block;
 	}
 }

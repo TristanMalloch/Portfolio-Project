@@ -3,7 +3,15 @@ let dogFightDetails = document.getElementById('dogFightDetails');
 let mobileNav = document.getElementById('smallNav');
 let hMenuIcon = document.getElementById('hMenuIcon');
 
-dogFightName.onmouseover
+let showMobileNav = function() {
+	if (mobileNav.style.display == "block") {
+		mobileNav.style.display = "none";
+	} else {
+		mobileNav.style.display = "block";
+	}
+};
+
+hMenuIcon.onclick = showMobileNav;
 
 let showDogFight = function() {
 	if (dogFightDetails.style.display == "block") {
@@ -14,13 +22,3 @@ let showDogFight = function() {
 };
 
 dogFightName.onclick = showDogFight;
-
-let showMobileNav = function() {
-	if (mobileNav.style.display == "inline-block") {
-		mobileNav.style.display = "none";
-	} else {
-		mobileNav.style.display = "inline-block";
-	}
-};
-
-hMenuIcon.onclick = showMobileNav;
