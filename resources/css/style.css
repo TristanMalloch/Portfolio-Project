@@ -17,15 +17,17 @@ header {
 	color: ghostwhite;
 	font-size: 1.2em;
 	justify-content: space-between;
+	align-items: center;
 	background-color: black;
+	height: 65px;
 }
 
 #bigNav h1, #bigNav ul {
 	margin: 0.5em;
 }
 
-#bigNav h1 {
-	margin-left: 0.3em;
+header h1 {
+	padding-left: 0.5em;
 }
 
 #bigNav ul {
@@ -51,7 +53,7 @@ header {
 }
 
 #mobileNav img {
-	height: 80px;
+	height: 60px;
 	cursor: pointer;
 	float: right;
 }
