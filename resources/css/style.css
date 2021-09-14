@@ -12,7 +12,9 @@ main {
 	font-size: 1em;
 }
 
-header {
+header a {
+	color: ghostwhite;
+	text-decoration: none;
 }
 
 #bigNav h1, #bigNav ul {
