@@ -46,7 +46,7 @@ header h1 {
 }
 
 #mobileNav {
-	background-color: black;
+	background-color: #3e3734;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -146,7 +146,7 @@ header h1 {
 
 #dogFightDetails img {
 	height: 450px;
-	border: solid 1px black;
+	border: solid 1px #3e3734;
 }
 
 #dogFightName {

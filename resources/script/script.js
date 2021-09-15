@@ -1,7 +1,7 @@
 let dogFightName = document.getElementById('dogFightName');
 let dogFightDetails = document.getElementById('dogFightDetails');
 let mobileNav = document.getElementById('smallNav');
-let hMenuIcon = document.getElementById('hMenuIcon');
+let MenuIcon = document.getElementById('MenuIcon');
 let skillsImage = document.getElementById('skillsImage');
 
 let showMobileNav = function() {
@@ -12,7 +12,7 @@ let showMobileNav = function() {
 	}
 };
 
-hMenuIcon.onclick = showMobileNav;
+MenuIcon.onclick = showMobileNav;
 
 let showDogFight = function() {
 	if (dogFightDetails.style.display == "block") {
