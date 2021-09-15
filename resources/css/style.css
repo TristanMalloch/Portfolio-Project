@@ -12,8 +12,11 @@ main {
 	font-size: 1em;
 }
 
+h1, h2, p, li {
+	color: #3e3734;
+}
+
 header a {
-	color: ghostwhite;
 	text-decoration: none;
 }
 
@@ -38,7 +41,7 @@ header h1 {
 
 #bigNav a {
 	font-family: 'Space Mono', monospace;
-	color: ghostwhite;
+	color: white;
 	text-decoration: none;
 }
 
@@ -50,16 +53,22 @@ header h1 {
 
 #topDiv {
 	display: flex;
-	color: ghostwhite;
+	color: white;
 	font-size: 1.2em;
 	justify-content: space-between;
 	align-items: center;
-	background-color: black;
+	background-color: #3e3734;
 	height: 65px;
 }
 
-#topDiv img {
-	height: 60px;
+#pcLogo {
+	height: 50px;
+	margin-left: 4%;
+	margin-top: 1%;
+}
+
+#MenuIcon {
+	height: 50px;
 	cursor: pointer;
 	display: none;
 }
@@ -87,7 +96,7 @@ header h1 {
 
 #mobileNav a {
 	font-family: 'Space Mono', monospace;
-	color: ghostwhite;
+	color: white;
 	text-decoration: none;
 }
 
@@ -156,8 +165,8 @@ header h1 {
 
 footer {
 	text-align: center;
-	background-color: black;
-	color: ghostwhite;
+	background-color: #3e3734;
+	color: white;
 	font-size: 1.1em;
 }
 
